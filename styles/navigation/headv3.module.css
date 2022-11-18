@@ -1,0 +1,97 @@
+.main {
+  background-color: #005bab;
+  width: 100%;
+  position: fixed;
+}
+
+.level1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #183a85;
+}
+
+.containerSide {
+  display: flex;
+}
+
+.containerLogo {
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.linkText {
+  color: rgba(255, 255, 255, 0.803);
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+.linkText:hover {
+  background-color: rgba(11, 32, 223, 0.603);
+}
+
+.navButton {
+  display: none;
+}
+
+.level2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subjectText {
+  margin: 0px 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subjectText:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+  .level2 {
+    display: none;
+  }
+  .containerSide {
+    display: none;
+  }
+
+  .logo {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .containerLogo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navButton {
+    width: 50%;
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 150px;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+}

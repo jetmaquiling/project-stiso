@@ -1,0 +1,42 @@
+.main {
+  width: 100%;
+  display: flex;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* animation-name: startup;
+    animation-duration: 2.0s; */
+}
+
+.backdrop {
+  width: 100%;
+  background-color: #005bab;
+  height: 100px;
+}
+
+@keyframes startup {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .backdrop {
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: startup;
+    animation-duration: 2s;
+    background-color: #005bab;
+    height: 65px;
+  }
+}

@@ -1,0 +1,166 @@
+.main {
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.auth {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s;
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.text1 {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 5px;
+  margin: 0px;
+}
+
+.text2 {
+  font-size: 20px;
+  color: rgb(252, 227, 0);
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.offText {
+  display: none;
+}
+
+.socialMediaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 40px;
+  margin: 0px 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.donateButton {
+  color: #fff;
+  font-size: 20px;
+  background-color: red;
+  margin: 0px 20px;
+  padding: 15px 20px;
+  border-radius: 10px 10px 0px 0px; /*TL TR BR BL*/
+  cursor: pointer;
+}
+
+.off {
+  display: flex;
+  align-items: center;
+  background-color: rgb(29, 29, 29);
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cookieText {
+  width: 600px;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgb(163, 163, 163);
+  margin: 10px 10px;
+  line-height: 20px;
+}
+
+.cookieButton {
+  text-align: center;
+  width: 200px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  padding: 5px 0px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text1 {
+    display: none;
+  }
+
+  .text2 {
+    display: none;
+  }
+  .offText {
+    display: none;
+  }
+
+  .off {
+    display: flex;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cookieButton {
+    text-align: center;
+    width: 200px;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+    padding: 0px 0px;
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .off {
+    display: flex;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cookieText {
+    width: 600px;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(163, 163, 163);
+    margin: 10px 10px;
+    line-height: 20px;
+  }
+
+  .donateButton {
+    color: #fff;
+    font-size: 15px;
+    background-color: red;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    border-radius: 10px 10px 0px 0px; /*TL TR BR BL*/
+    cursor: pointer;
+  }
+}

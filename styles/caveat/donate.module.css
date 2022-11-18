@@ -1,0 +1,71 @@
+.main {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-image: url("/Images/background1.png");
+}
+
+.mainContainer {
+  width: 50%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.title {
+  margin: 10px 0px;
+  color: #005bab;
+  font-size: 60px;
+  text-shadow: 2px 2px 0px red;
+}
+
+.detailBox {
+  background-color: rgb(211, 211, 211);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.label {
+  margin: 0px;
+  color: #005bab;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.text {
+  margin: 0px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.note {
+  font-size: 15px;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    background: none;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .detailBox {
+    border-radius: 0px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+  }
+
+  .text {
+    margin: 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}

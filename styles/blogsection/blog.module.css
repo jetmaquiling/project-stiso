@@ -1,0 +1,352 @@
+.main {
+  width: 60%;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 100px;
+  padding: 0px 20px;
+}
+
+.subject {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title {
+  margin: 0px 0px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.subtitle {
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.795);
+}
+.author {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.time {
+  margin: 10px 0px 20px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #424242;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  display: flex;
+  margin-bottom: 100px;
+  padding: 0px 20px;
+}
+
+.sectionA {
+  width: 65%;
+  min-width: 700px;
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+}
+
+.content blockquote {
+  margin: 0px;
+  padding: 10px 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.content p {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 10px 0px;
+}
+
+.content li {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.content a {
+  color: #005bab;
+  text-decoration: underline;
+}
+
+.content br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 50px; /* change this to whatever height you want it */
+}
+
+.sectionB {
+  width: 35%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureBox {
+  padding: 10px 20px;
+  background-color: rgb(212, 212, 212);
+  margin: 10px 0px;
+  text-align: start;
+}
+
+.featureSubject {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.featureTitle {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.featureButton {
+  font-size: 15px;
+  cursor: pointer;
+  text-align: end;
+  margin: 0px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  overflow: hidden;
+}
+
+.linkBox {
+  margin: 10px;
+  background-color: #005bab;
+  display: flex;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.linkBox:hover {
+  background-color: rgb(0, 45, 248);
+}
+
+.logoBox {
+  display: none;
+  width: 65%;
+  margin: 10px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainContainer {
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 0px 100px;
+  }
+
+  .sectionContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 0px 100px;
+  }
+  .sectionA {
+    width: 100%;
+    min-width: 1px;
+  }
+
+  .sectionB {
+    width: 100%;
+  }
+  .logoBox {
+    display: flex;
+    width: 100%;
+  }
+  .logo {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mainContainer {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+
+  .sectionContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+  }
+  .title {
+    margin: 0px 0px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35px;
+  }
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .linkBox {
+    margin: 5px;
+    display: flex;
+    padding: 5px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 80%;
+  }
+  .mainContainer {
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .sectionContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 0px 0px;
+    text-align: center;
+  }
+
+  .subject {
+    margin: 0px;
+    font-size: 15px;
+
+    font-weight: 600;
+  }
+
+  .title {
+    margin: 0px 0px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    margin: 10px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.795);
+  }
+  .author {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .time {
+    margin: 10px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
+  }
+
+  .content {
+    text-align: start;
+    margin: auto;
+    width: 85%;
+  }
+
+  .content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .content h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .content br {
+    margin: 25px 0px; /* change this to whatever height you want it */
+  }
+
+  .content iframe {
+    width: 100%;
+    height: 230px;
+  }
+
+  .content blockquote {
+    padding: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .content ul {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .content ol {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .content li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

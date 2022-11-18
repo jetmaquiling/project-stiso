@@ -1,0 +1,98 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 100px;
+}
+
+.contentBox {
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  color: rgb(54, 54, 54);
+  margin: 0px 0px 20px 0px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonBox {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  height: 100%;
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.buttonBox:hover {
+  transition: 0.3s;
+  transform: scale(105%);
+}
+
+.imageBox {
+  height: 100%;
+  width: 100%;
+}
+
+.buttonBox1 {
+  background-color: #ce1127;
+}
+
+.buttonBox2 {
+  background-color: #012a7e;
+}
+
+.buttonBox3 {
+  background-color: #fcd116;
+}
+
+.buttonFont {
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    padding: 100px 20px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .buttonBox {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .buttonBox {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+
+  .buttonBox:hover {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+}

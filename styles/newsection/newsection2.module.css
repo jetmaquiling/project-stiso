@@ -1,0 +1,87 @@
+.main {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.skeleton {
+  margin: 5px 0px;
+}
+
+.label {
+  font-size: 25px;
+  text-align: center;
+}
+
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articleItem {
+  width: 33%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.articleImageBox {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.articleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.articleSubject {
+  color: rgb(99, 99, 99);
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.articleTitle {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0px;
+}
+
+.articleTitle:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff200;
+}
+
+.author {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 800px) {
+  .articleSubject {
+    color: rgb(99, 99, 99);
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+  .articleItem {
+    width: 50%;
+    padding: 10px 5px;
+    cursor: pointer;
+  }
+
+  .articleTitle {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+  }
+
+  .label {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .articleImageBox {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+  }
+}

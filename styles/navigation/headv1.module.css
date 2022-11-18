@@ -1,0 +1,291 @@
+.main {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0);
+}
+
+.off {
+  width: 100%;
+  position: fixed;
+  background: #005bab;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 4px 4px 12px 2px rgba(0, 10, 56, 0.295);
+}
+
+.navbar {
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.navbarFixed {
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+}
+
+.navbar1 {
+  width: 40%;
+  overflow: hidden;
+}
+
+.navbar1Fixed {
+  width: 40%;
+  overflow: hidden;
+  padding: 5px 20px;
+}
+
+.navbar2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+}
+
+.navbar2Fixed {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+}
+
+.navbar3 {
+  width: 0%;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+
+.navbar4 {
+  display: none;
+  width: 0%;
+  padding: 0px 0px;
+}
+/***************************************************/
+
+.buttonFont {
+  font-size: 18px;
+
+  transition: 0.3s;
+  padding: 0px 10px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.buttonFontSpecial {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.803);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0px;
+}
+
+/****************************************************/
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.buttonBox {
+  transition: 0.3s;
+  padding: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.buttonBox:hover {
+  color: rgba(255, 255, 255, 0.803);
+  background-color: #fff200;
+  color: #000;
+}
+
+.buttonBoxSpecial {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 0px;
+  transition: 0.3s;
+  border-radius: 40px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.buttonBoxSpecial:hover {
+  transition: 0.3s;
+  background-color: #d44343;
+}
+
+.menuIcon {
+  color: #fff;
+  font-size: 30px;
+}
+
+.optionOpen {
+  width: 200px;
+  background-image: linear-gradient(to left, #23d5abf5, #03316ef6);
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  position: absolute;
+  top: 85px;
+  animation-name: openOption;
+  animation-duration: 0.5s;
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.384);
+}
+.optionClose {
+  width: 200px;
+  background-image: linear-gradient(#23d5abe7, #03316ee3);
+  border-radius: 10px;
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 85px;
+}
+
+@keyframes openOption {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/***********************************************************/
+.socialMediaContainer {
+  display: flex;
+  flex-direction: row;
+}
+.socialBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  background-color: #0038a7;
+}
+
+.socialBox:hover {
+  background-color: rgb(1, 8, 117);
+}
+
+.donationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  width: 100%;
+  background-color: #ce1127;
+}
+
+.donationBox:hover {
+  background-color: #ce1127;
+}
+
+@media only screen and (max-width: 900px) {
+  .main {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbarFixed {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar2Fixed {
+    width: 0%;
+    display: none;
+  }
+
+  .navbar1 {
+    width: 80%;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .navbar1Fixed {
+    width: 80%;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .navbar2 {
+    width: 0%;
+    display: none;
+  }
+  .navbar3 {
+    max-width: 0%;
+    display: none;
+  }
+  .navbar4 {
+    width: 20%;
+    cursor: pointer;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  .navbarFixed {
+    width: 100%;
+    padding: 5px;
+  }
+  .navbar1 {
+    width: 80%;
+  }
+
+  .navbar4 {
+    width: 20%;
+    justify-content: flex-end;
+    display: flex;
+    margin: auto;
+  }
+  .logo {
+    margin: 5px 0px 0px 5px;
+  }
+}
